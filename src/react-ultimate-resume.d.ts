@@ -1,1 +1,1 @@
-declare module '@welovedevs/react-ultimate-resume';
+declare module "@welovedevs/react-ultimate-resume";
