@@ -5,12 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import "@welovedevs/react-ultimate-resume/styles/global.css";
-import { DEFAULT_THEME } from "@welovedevs/ui/styles/theme";
 import {
   createTheme,
   StylesProvider as MuiStylesProvider,
   ThemeProvider,
-  Theme
 } from "@material-ui/core/styles";
 import { create } from "jss";
 import { JssProvider } from "react-jss";
@@ -21,9 +19,20 @@ muiInstance.setup({ insertionPoint: "mui-insertion-point" });
 const jssinstance = create(jssDefaultPreset());
 jssinstance.setup({ insertionPoint: "jss-insertion-point" });
 
-export const theme: Theme = createTheme();
+export const theme = createTheme();
+// export const theme = createTheme();{
+//     ...DEFAULT_THEME,
+//     spacing: 8,
+//     palette: Object.entries(DEFAULT_THEME.palette).reduce((acc, [name, values]) => {
+//         const accCopy = acc;
+//         // accCopy[name].main = values[500];
+//         return accCopy;
+//     }, DEFAULT_THEME.palette)
+// });
 
+const jssStyleNode = document.createComment("jss-insertion-point");
 const muiStyleNode = document.createComment("mui-insertion-point");
+document.head.insertBefore(jssStyleNode, document.head.firstChild);
 document.head.insertBefore(muiStyleNode, document.head.firstChild);
 
 ReactDOM.render(
