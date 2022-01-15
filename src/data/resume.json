@@ -6,12 +6,12 @@
       "address": "2607 Willard Drive",
       "city": "Charlottesville",
       "countryCode": "US",
-      "postalCode": "VA 94115",
+      "postalCode": "22903",
       "region": "Virginia"
     },
     "name": "David McWhorter",
     "phone": "(434) 227-2551",
-    "picture": "Face.jpg",
+    "picture": "http://localhost:3000/Face.jpg",
     "profiles": [
       {
         "network": "GitHub",
@@ -20,7 +20,7 @@
       },
       {
         "network": "LinkedIn",
-        "url": "https://www.linkedin.com/in/davidmcwhorter05",
+        "url": "https://www.linkedin.com/in/davidmcwhorter06",
         "username": "davidmcwhorter05"
       },
       {
@@ -30,25 +30,40 @@
       }
     ],
     "summary": "Passionate creator of software that harnesses data to heal the world.",
-    "website": "https://mcwhorter.io"
+    "website": "https://www.mcwhorter.io"
   },
   "education": [
     {
       "area": "Computer Engineering and Computer Science",
-      "endDate": "2005-05-20",
-      "gpa": "4.0",
+      "endDate": "2005",
+      "gpa": "3.76",
       "institution": "University of Virginia",
-      "startDate": "2001-08-20",
+      "startDate": "2001",
       "studyType": "Bachelor's Degree"
     },
     {
-      "area": "",
-      "courses": ["DB1101 - Basic SQL"],
-      "endDate": "",
-      "gpa": "4.0",
-      "institution": "Universit\u00e9 d'artois",
-      "startDate": "2011-01-01",
-      "studyType": ""
+      "area": "Statistics",
+      "endDate": "2010",
+      "institution": "Piedmont Virginia Community College",
+      "startDate": "2010"
+    },
+    {
+      "area": "Linear Statistical Models",
+      "endDate": "2011",
+      "institution": "University of Virginia",
+      "startDate": "2011"
+    },
+    {
+      "area": "Functional Programming Principles in Scala; Principles of Reactive Programming",
+      "endDate": "2014",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "startDate": "2012"
+    },
+    {
+      "area": "Cloud Computing Applications",
+      "endDate": "2015",
+      "institution": "University of Illinois at Urbana-Champaign",
+      "startDate": "2015"
     }
   ],
   "interests": [
@@ -76,7 +91,6 @@
   "projects": [
     {
       "description": "GeoMesa is a spatio-temporal index for distributed databases.",
-      "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
       "images": [
         {
           "url": "https://www.geomesa.org/img/geomesa.png"
@@ -88,7 +102,6 @@
     },
     {
       "description": "Apache Spark is a distributed computing platform.",
-      "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b13",
       "images": [
         {
           "url": "https://spark.apache.org/docs/latest/img/spark-logo-hd.png"
@@ -304,13 +317,30 @@
   },
   "work": [
     {
-      "highlights": ["Started the company"],
-      "location": "Paris, France",
-      "name": "Samsung Engineering",
-      "position": "3D Cad Engineer",
-      "startDate": "2014-01-01",
-      "summary": "Description...",
-      "website": "http://company.com"
+      "highlights": [
+"Software Engineering",
+"• Developing Service Line Analytics, a tool for analyzing utilization and cost of surgical supplies and drugs as well as clinical outcomes.",
+"• Developing Cohort Builder and Measure Builder, foundational tools allowing users to create patient cohorts and flexible measures for data analytics",
+"• Designing and implementing data ingest, transformation and indexing components",
+"• Designing and implementing user-facing web services and UI components",
+"• Designing and implementing data analytics components using appropriate algorithms and technologies",
+"• Designing and implementing infrastructure components including server administration and distributed computing frameworks",
+"• Building software tools that support our operations staff",
+"Technical Leadership",
+"• Working to build and support an engaged, transparent, innovative and helpful engineering team culture",
+"• Supporting others on the team with technical input and direction on a daily basis",
+"• Asking pointed questions and contributing to discussions to clarify, challenge and refine product requirements and strategy",
+"• Providing critical but constructive feedback and contributions to other teams, staff members, and the broader organization",
+"Data Science",
+"• Contributing to the design and implementation of an on the fly retrospective pair-matched patient comparison tool to allow users to analyze the effect of a single variable on patient outcomes while holding other variables nearly constant",
+"• Developing foundational components (e.g. cohort creation) of a larger data analytics framework"
+        ],
+      "location": "Charlottesville, VA",
+      "name": "Premier, Inc",
+      "position": "Software Architect; Staff Software Engineer, Sr. Software Engineer",
+      "startDate": "2015-03-13",
+      "summary": "nqad",
+      "website": "https://www.premierinc.com"
     },
     {
       "endDate": "2014-01-01",

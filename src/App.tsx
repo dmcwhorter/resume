@@ -12,8 +12,15 @@ import resume from "./data/resume.json";
 
 import DeveloperProfile from "@welovedevs/react-ultimate-resume";
 
+function handleExternalLink(url: string) {
+  return () => {
+    window.open(url, "_blank");
+  };
+}
+
 function App() {
-  const handleClick = useCallback(async () => {
+
+  const handleResumeDownload = useCallback(async () => {
     return await fetch("./resume.pdf")
       .then((e) => e.blob())
       .then((blob) => {
@@ -43,8 +50,67 @@ function App() {
       }}
       additionalNodes={{
         banner: {
-          actionsButtons: (
-            <Button variant="outlined" onClick={handleClick} color={"light"}>
+          actionsButtons: [
+            <Button
+              key="github"
+              variant="outlined"
+              onClick={handleExternalLink("https://github.com/dmcwhorter")}
+              color="light"
+            >
+              <GithubIcon
+                fill="white"
+                stroke="white"
+                width="24px"
+                height="24px"
+              />
+            </Button>,
+            <Button
+              key="linkedin"
+              variant="outlined"
+              onClick={handleExternalLink(
+                "https://www.linkedin.com/in/davidmcwhorter05"
+              )}
+              color="light"
+            >
+              <LinkedInIcon
+                fill="white"
+                stroke="white"
+                width="24px"
+                height="24px"
+              />
+            </Button>,
+            <Button
+              key="twitter"
+              variant="outlined"
+              onClick={handleExternalLink("https://twitter.com/DavidMcWhorter")}
+              color="light"
+            >
+              <TwitterIcon
+                fill="white"
+                stroke="white"
+                width="24px"
+                height="24px"
+              />
+            </Button>,
+            <Button
+              key="email"
+              variant="outlined"
+              onClick={() => window.open("mailto:david@mcwhorter.io")}
+              color="light"
+            >
+              <EmailIcon
+                fill="white"
+                stroke="white"
+                width="24px"
+                height="24px"
+              />
+            </Button>,
+            <Button
+              key="resumedownload"
+              variant="outlined"
+              onClick={handleResumeDownload}
+              color="light"
+            >
               Resume&nbsp;&nbsp;
               <DownloadIcon
                 fill="white"
@@ -52,63 +118,7 @@ function App() {
                 width="24px"
                 height="24px"
               />
-            </Button>
-          ),
-          userInformations: [
-            <div>
-              <br />
-              <a
-                href="https://github.com/dmcwhorter"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GithubIcon
-                  fill="white"
-                  stroke="white"
-                  width="24px"
-                  height="24px"
-                />
-              </a>
-              &nbsp;&nbsp;
-              <a
-                href="http://www.linkedin.com/in/davidmcwhorter05"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedInIcon
-                  fill="white"
-                  stroke="white"
-                  width="24px"
-                  height="24px"
-                />
-              </a>
-              &nbsp;&nbsp;
-              <a
-                href="http://twitter.com/DavidMcWhorter"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <TwitterIcon
-                  fill="white"
-                  stroke="white"
-                  width="24px"
-                  height="24px"
-                />
-              </a>
-              &nbsp;&nbsp;
-              <a
-                href="mailto:david@mcwhorter.io"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <EmailIcon
-                  fill="white"
-                  stroke="white"
-                  width="24px"
-                  height="24px"
-                />
-              </a>
-            </div>,
+            </Button>,
           ],
         },
       }}
