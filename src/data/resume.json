@@ -73,7 +73,7 @@
   ],
   "projects": [
     {
-      "description": "GeoMesa is a spatio-temporal index for distributed databases.",
+      "description": "GeoMesa is a spatio-temporal index for distributed databases",
       "images": [
         {
           "url": "https://www.geomesa.org/img/geomesa.png"
@@ -84,18 +84,18 @@
       "name": "GeoMesa Contributions"
     },
     {
-      "description": "Apache Spark is a distributed computing platform.",
+      "description": "Power Consumption Characterization of a Graphics Processing Unit",
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg"
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/University_of_Virginia_text_logo.svg"
         }
       ],
       "index": 2,
-      "link": "https://github.com/apache/spark/commits?author=dmcwhorter",
-      "name": "Spark Contributions"
+      "link": "https://www.mcwhorter.io/DavidMcWhorterThesis05.pdf",
+      "name": "Undergraduate Thesis"
     },
     {
-      "description": "My professional website and resume built using open source packages.",
+      "description": "My professional website and resume built using open source packages",
       "images": [
         {
           "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -104,15 +104,17 @@
       "index": 3,
       "link": "https://github.com/dmcwhorter/resume",
       "name": "Professional Website & Resume"
-    }
-  ],
-  "publications": [
+    },
     {
-      "name": "Undergraduate Thesis",
-      "publisher": "University of Virginia",
-      "releaseDate": "2005-03-29",
-      "summary": "Power Consumption Characterization of a Graphics Processing Unit",
-      "website": "https://www.mcwhorter.io/media/DavidMcWhorterThesis05.pdf"
+      "description": "Apache Spark is a distributed computing platform",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg"
+        }
+      ],
+      "index": 4,
+      "link": "https://github.com/apache/spark/commits?author=dmcwhorter",
+      "name": "Spark Contributions"
     }
   ],
   "resumeCustomization": {

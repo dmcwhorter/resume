@@ -9,7 +9,7 @@
     "@welovedevs/ui": "^1.2.10",
     "downloadjs": "^1.4.7",
     "formik": "^2.1.2",
-    "jsonresume-theme-spartan": "./packages/jsonresume-theme-spartan-0.3.0-dmcwhorter.tgz",
+    "jsonresume-theme-spartan": "file:./packages/jsonresume-theme-spartan-0.3.0-dmcwhorter.tgz",
     "jss": "^10.8.2",
     "jss-preset-default": "^10.8.2",
     "prop-types": "^15.5.7",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "resumed render src/data/resume.json -t spartan -o ./resume.html && puppeteer print ./resume.html --background false --margin-top=0.45in  --margin-right=0.5in --margin-bottom=0.45in --margin-left=0.5in public/DavidMcWhorterResume.pdf --wait-until networkidle0 && del public/resume.html && react-scripts build",
+    "build": "resumed render src/data/resume.json -t spartan -o ./public/resume.html && puppeteer print ./public/resume.html --background false --margin-top=0.45in  --margin-right=0.5in --margin-bottom=0.45in --margin-left=0.5in public/DavidMcWhorterResume.pdf --wait-until networkidle0 && del public/resume.html && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

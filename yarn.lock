@@ -8725,9 +8725,9 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonresume-theme-spartan@./packages/jsonresume-theme-spartan-0.3.0-dmcwhorter.tgz:
+"jsonresume-theme-spartan@file:./packages/jsonresume-theme-spartan-0.3.0-dmcwhorter.tgz":
   version "0.3.0-dmcwhorter"
-  resolved "./packages/jsonresume-theme-spartan-0.3.0-dmcwhorter.tgz#61e10a3546afff164c8748ce21f10837ea20af4d"
+  resolved "file:./packages/jsonresume-theme-spartan-0.3.0-dmcwhorter.tgz#faac12fbe41a1fd8789eecf06b6178d88f58d144"
   dependencies:
     handlebars ">=4.5.3"
     moment ">=2.24.0"
