@@ -4,15 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import "@welovedevs/react-ultimate-resume/styles/global.css";
-import { StylesProvider as MuiStylesProvider, } from "@material-ui/core/styles";
-import { create } from "jss";
+import { StylesProvider as MuiStylesProvider } from "@material-ui/core/styles";
 import { JssProvider } from "react-jss";
-import jssDefaultPreset from "jss-preset-default";
+import { create } from "jss";
+import preset from "jss-preset-default";
 
-const muiInstance = create(jssDefaultPreset());
+import messages from "./data/i18n.json";
+import { IntlProvider } from "react-intl";
+
+const muiInstance = create(preset());
 muiInstance.setup({ insertionPoint: "mui-insertion-point" });
-const jssinstance = create(jssDefaultPreset());
+const jssinstance = create(preset());
 jssinstance.setup({ insertionPoint: "jss-insertion-point" });
 
 const jssStyleNode = document.createComment("jss-insertion-point");
@@ -24,7 +26,9 @@ ReactDOM.render(
   <React.StrictMode>
     <MuiStylesProvider jss={muiInstance}>
       <JssProvider jss={jssinstance}>
-            <App />
+        <IntlProvider locale={"en"} messages={messages}>
+          <App />
+        </IntlProvider>
       </JssProvider>
     </MuiStylesProvider>
   </React.StrictMode>,

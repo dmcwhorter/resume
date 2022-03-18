@@ -2,14 +2,14 @@ import React, { useCallback } from "react";
 import "./App.css";
 
 import { Button } from "@welovedevs/ui";
-import { ReactComponent as EmailIcon } from "@welovedevs/react-ultimate-resume/assets/icons/email.svg";
-import { ReactComponent as LinkedInIcon } from "@welovedevs/react-ultimate-resume/assets/icons/brands/linkedin.svg";
-import { ReactComponent as TwitterIcon } from "@welovedevs/react-ultimate-resume/assets/icons/brands/twitter.svg";
-import { ReactComponent as GithubIcon } from "@welovedevs/react-ultimate-resume/assets/icons/brands/github.svg";
+import { GrMail as EmailIcon } from "react-icons/gr";
+import { GrLinkedinOption as LinkedInIcon } from "react-icons/gr";
+import { GrTwitter as TwitterIcon } from "react-icons/gr";
+import { GrGithub as GithubIcon } from "react-icons/gr";
 import download from "downloadjs";
 import resume from "./data/resume.json";
 
-import WithProvidersDeveloperProfile from "@welovedevs/react-ultimate-resume";
+import { DeveloperProfile } from "@welovedevs/react-ultimate-resume";
 
 function handleExternalLink(url: string) {
   return () => {
@@ -28,8 +28,11 @@ function App() {
   }, []);
 
   return (
-    <WithProvidersDeveloperProfile
+    <DeveloperProfile
       data={resume}
+      onEdit={{}}
+      onCustomizationChanged={{}}
+      onIsEditingChanged={{}}
       options={{
         locale: "en",
         // side: 'back',
@@ -47,6 +50,7 @@ function App() {
         maxSkills: 30,
         dismissFooter: true,
       }}
+      mode={"view"}
       additionalNodes={{
         banner: {
           actionsButtons: [
@@ -57,10 +61,8 @@ function App() {
               color="light"
             >
               <GithubIcon
-                fill="white"
-                stroke="white"
-                width="20px"
-                height="20px"
+                color="white"
+                size="20px"
               />
             </Button>,
             <Button
@@ -72,10 +74,8 @@ function App() {
               color="light"
             >
               <LinkedInIcon
-                fill="white"
-                stroke="white"
-                width="20px"
-                height="20px"
+                color="white"
+                size="20px"
               />
             </Button>,
             <Button
@@ -85,10 +85,8 @@ function App() {
               color="light"
             >
               <TwitterIcon
-                fill="white"
-                stroke="white"
-                width="20px"
-                height="20px"
+                color="white"
+                size="20px"
               />
             </Button>,
             <Button
@@ -98,10 +96,8 @@ function App() {
               color="light"
             >
               <EmailIcon
-                fill="white"
-                stroke="white"
-                width="20px"
-                height="20px"
+                color="white"
+                size="20px"
               />
             </Button>,
             <Button
@@ -115,6 +111,8 @@ function App() {
           ],
         },
       }}
+      classes={{}}
+      onFilesUpload={{}}
     />
   );
 }

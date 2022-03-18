@@ -1,0 +1,9 @@
+{
+  "Basics.Back.CodingReason.Title": "How I started coding",
+  "Basics.Back.CodeExperienceYear.value": "{codeExperienceYears, plural, one {# year} other {# years} } as an engineer",
+  "Basics.Back.CodingYears.value": "{codingYears, plural, one {# year} other {# years}} coding (including studies, personal projects, and work)",
+  "Languages.front.content": "I speak {languagesNode}",
+  "Projects.front.title": "Favorite project: ",
+  "Studies.title": "I graduated from the {schoolName}"
+
+}

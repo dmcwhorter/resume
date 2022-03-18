@@ -1,13 +1,123 @@
+@import '@fontsource/prompt';
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: fade-in 1s ease;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-100-normal.woff2');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-300-normal.woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-400-normal.woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-500-normal.woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-600-normal.woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-800-normal.woff2');
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-100-italic.woff2');
+    font-style: italic;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-300-italic.woff2');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-400-italic.woff2');
+    font-style: italic;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-500-italic.woff2');
+    font-style: italic;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-600-italic.woff2');
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/prompt/files/prompt-latin-800-italic.woff2');
+    font-style: italic;
+    font-weight: 900;
+}
+
+/*
+ * some @fontsource google fonts have variable weight files availalbe, but not prompt...
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-normal.woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-italic.woff2');
+    font-style: italic;
+} */
